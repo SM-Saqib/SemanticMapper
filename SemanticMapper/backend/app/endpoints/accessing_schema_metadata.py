@@ -1,13 +1,3 @@
-# 0.1 GET /api/v1/metadata/{projectId}
-# Purpose: Retrieve metadata and enrichments loaded with schema for a project.
-# Input Parameters:
-# projectId (string, in URL) - The unique identifier of the project.
-# Output:
-# metadata (object) - Contains schema metadata like descriptions, examples, links etc.
-# Error Handling:
-# 404 Not Found if invalid projectId provided.
-# 500 Internal Server Error if error retrieving metadata.
-
 
 from fastapi import APIRouter, HTTPException, Depends
 

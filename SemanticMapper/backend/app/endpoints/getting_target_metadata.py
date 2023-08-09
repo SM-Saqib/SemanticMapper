@@ -1,12 +1,3 @@
-# 11.1 GET /api/v1/ontology/metadata/{projectId}
-# Purpose: Retrieve schema.org metadata for target schema elements.
-# Input Parameters:
-# projectId (string, in URL) - The unique identifier of the project.
-# Output:
-# targetMetadata (object) - Contains schema.org metadata for target schema elements.
-# Error Handling:
-# 404 Not Found if invalid projectId provided.
-# 500 Internal Server Error if error retrieving target metadata.
 
 
 from fastapi import APIRouter, HTTPException, Depends

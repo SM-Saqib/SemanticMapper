@@ -1,12 +1,3 @@
-# 9.1 GET /api/v1/schemas/{projectId}
-# Purpose: Retrieve list of all uploaded schemas for a specific project.
-# Input Parameters:
-# projectId (string, in URL) - The unique identifier of the project.
-# Output:
-# schemas (array of objects) - List of schema objects containing name, file path, date uploaded etc.
-# Error Handling:
-# 404 Not Found if invalid projectId provided.
-# 500 Internal Server Error if error retrieving schemas.
 
 
 from fastapi import APIRouter, HTTPException, Depends
