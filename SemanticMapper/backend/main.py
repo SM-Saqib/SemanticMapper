@@ -2,12 +2,12 @@
 
 # backend/main.py
 from fastapi import FastAPI
-from app.api import router  # Import the API router from app.api
+from app.api import api_router  # Import the API router from app.api
 
 app = FastAPI()
 
 # Include the router for your APIs
-app.include_router(router)
+app.include_router(api_router)
 
 if __name__ == "__main__":
     import uvicorn
