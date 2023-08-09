@@ -19,7 +19,7 @@ from fastapi import APIRouter, HTTPException, Depends
 
 router = APIRouter()
 
-router.get("/export/mapping/{projectId}", tags=["Export APIs"])
+@router.get("/export/mapping/{projectId}", tags=["Export APIs"])
 async def export_semantic_mapping(projectId: str):
     '''
     Purpose: Retrieve semantic mapping result for a specific project.
@@ -39,7 +39,7 @@ async def export_semantic_mapping(projectId: str):
         raise HTTPException(status_code=500, detail=str(e))
     
 
-router.get("/export/enrichments/{projectId}", tags=["Export APIs"])
+@router.get("/export/enrichments/{projectId}", tags=["Export APIs"])
 async def export_enrichments(projectId: str):
     '''
     Purpose: Retrieve original schema enrichments for a specific project.
