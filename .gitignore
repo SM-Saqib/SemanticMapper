@@ -1,2 +1,13 @@
 /create_fastapi_project.sh
 /installation_script.sh
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+create_model_files.sh
+create_requirements.sh
+SemanticMapper/backend/__pycache__/main.cpython-310.pyc
+
+SemanticMapper/backend/app/__pycache__/api.cpython-310.pyc
+SemanticMapper/backend/app/endpoints/__pycache__/accessing_schema_metadata.cpython-310.pyc

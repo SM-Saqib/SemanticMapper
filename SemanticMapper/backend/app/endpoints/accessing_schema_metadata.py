@@ -1,4 +1,4 @@
-
+#./app/endpoints/accessing_schema_metadata.py
 from fastapi import APIRouter, HTTPException, Depends
 
 router = APIRouter()
