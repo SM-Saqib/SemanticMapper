@@ -1,6 +1,6 @@
 #./app/endpoints/accessing_schema_metadata.py
 from fastapi import APIRouter, HTTPException, Depends
-
+from app.crud.crud_accessing_schema_metadata import crud_accessing_schema_metadata
 router = APIRouter()
 
 @router.get("/metadata/{projectId}", tags=["Metadata APIs"])
@@ -18,7 +18,11 @@ async def get_metadata(projectId: str):
     '''
     try:
         # retrieve metadata and return the status
-        return {"status": "success", "message": "Metadata retrieved successfully"}
+        # return {"status": "success", "message": "Metadata retrieved successfully"}
+
+        #use app.crud.crud_accessing_schema_metadata to retrieve metadata
+
+        metadata =
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
