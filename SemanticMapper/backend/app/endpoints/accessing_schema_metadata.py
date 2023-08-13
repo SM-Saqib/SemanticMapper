@@ -22,7 +22,8 @@ async def get_metadata(projectId: str):
 
         #use app.crud.crud_accessing_schema_metadata to retrieve metadata
 
-        metadata =
+        metadata = crud_accessing_schema_metadata.get(projectId)
+        return metadata
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
